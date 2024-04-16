@@ -6,4 +6,5 @@
 
 ### Présentation du RPG
 
-#### Bonjour c'est Jordan, je suis présent à la réunion
+#### Bonjour c'est Jordan, je suis présent à la réunion, cela ne fonctionne pas
+
