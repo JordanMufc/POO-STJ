@@ -1,13 +1,18 @@
-# README
+# Réunion du 16/04/2024
 
-### Ce fichier va servir de tutoriel pour l'installation de votre application
+##Personnage
 
-#### Il s'agit d'une application de jeux vidéos
+Classe personnage et équipements ok (pour le moment), on compte ajouter d'autres "race" (Barbare,Géant)
 
-### Présentation du RPG
+##Interface
 
-#### Bonjour c'est Jordan, je suis présent à la réunion, cela ne fonctionne pas
+Système de combat : Tour par Tour.
+Système d'exploration : Comment on se balade sur la map. Comme dans Zelda ou Pokémon.
 
-Ce jeu va être cool !
-On vas essayer !
-brayan a ecrit qlq chose merci de m'accepter 
+### Histoire :
+
+Un groupe de voyageurs doivent rentrer dans un donjon, le but est d'aller y dérober les attestations de réussite.
+
+
+
+
