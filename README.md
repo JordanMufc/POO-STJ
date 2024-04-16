@@ -5,3 +5,5 @@
 #### Il s'agit d'une application de jeux vidéos
 
 ### Présentation du RPG
+
+Ce jeu va être cool !
