@@ -1,3 +1,18 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyo
+*.pyz
+*.pyzw
+
+# macOS
+*.DS_Store
+*.AppleDouble
+*.LSOverride
+Icon
