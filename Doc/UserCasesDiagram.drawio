@@ -1,0 +1,97 @@
+<mxfile host="Electron" modified="2024-04-25T18:22:49.380Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="3CC1xNfF6BtQqA7e76Yv" version="24.2.5" type="device">
+  <diagram name="Page-1" id="x0_igtPXV6naOGxpov4l">
+    <mxGraphModel dx="2277" dy="1473" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-1" value="Exploration" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="300" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-6" value="Move" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2QnAGt9f6g5Ijg59R1Jx-1">
+          <mxGeometry x="90" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-7" value="Interact with world" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2QnAGt9f6g5Ijg59R1Jx-1">
+          <mxGeometry x="90" y="150" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-2" value="Fight" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="40" width="200" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-12" value="Run out" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2QnAGt9f6g5Ijg59R1Jx-2">
+          <mxGeometry x="40" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-13" value="Attack" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2QnAGt9f6g5Ijg59R1Jx-2">
+          <mxGeometry x="40" y="140" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-14" value="Change Character" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2QnAGt9f6g5Ijg59R1Jx-2">
+          <mxGeometry x="40" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-15" value="Use Object" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2QnAGt9f6g5Ijg59R1Jx-2">
+          <mxGeometry x="40" y="350" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-3" value="Shop" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1680" y="40" width="200" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-20" value="Buy" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2QnAGt9f6g5Ijg59R1Jx-3">
+          <mxGeometry x="40" y="142" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-21" value="Sell" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2QnAGt9f6g5Ijg59R1Jx-3">
+          <mxGeometry x="40" y="242" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-22" value="Leave without trading" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2QnAGt9f6g5Ijg59R1Jx-3">
+          <mxGeometry x="40" y="42" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-5" value="Inventory" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2520" y="40" width="200" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-26" value="Use item" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2QnAGt9f6g5Ijg59R1Jx-5">
+          <mxGeometry x="40" y="35" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-27" value="Drop item" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2QnAGt9f6g5Ijg59R1Jx-5">
+          <mxGeometry x="40" y="125" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-9" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Move&lt;/h1&gt;&lt;p&gt;1.Move Upward, Downward, Left , Right&lt;/p&gt;&lt;p&gt;Exceptions.&lt;/p&gt;&lt;p&gt;1 Bloqued field (Wall, Obstacle, NPC)&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="240" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-10" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Interact with world&lt;/h1&gt;&lt;p&gt;1. Talk with NPC&lt;/p&gt;&lt;p&gt;2. Open chest&lt;/p&gt;&lt;p&gt;3. Open Door&lt;/p&gt;&lt;p&gt;4. interact with elements&lt;/p&gt;&lt;p&gt;Exepctions.&lt;/p&gt;&lt;p&gt;- Door locked&lt;/p&gt;&lt;p&gt;- Chest locked&lt;/p&gt;&lt;p&gt;- Too early in quest to interact&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="200" width="180" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-16" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Run&lt;/h1&gt;&lt;div&gt;1. Player click on Run button&lt;/div&gt;&lt;div&gt;2. The party escape the fight&lt;br&gt;3. The fight end&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;exceptions.&lt;br&gt;- Cant run out this fight.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="40" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-17" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Attack.&lt;/h1&gt;&lt;div&gt;1. player click on attack button&lt;/div&gt;&lt;div&gt;2. Player chose an attack on the list&lt;/div&gt;&lt;div&gt;3. Attack is casted&lt;/div&gt;&lt;div&gt;4. Damage applied if attack succes&lt;/div&gt;&lt;div&gt;5.Turn end&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Exceptions.&lt;/div&gt;&lt;div&gt;- Attack on cool down&lt;/div&gt;&lt;div&gt;- Not enough mana, rage, etc&lt;/div&gt;&lt;div&gt;- Character is stunt or affected by any paralysis type effect&lt;/div&gt;&lt;div&gt;- Weapon broked&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="40" width="180" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-18" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Change chara&lt;/h1&gt;&lt;p&gt;1.Player click on switch chara button&lt;/p&gt;&lt;p&gt;2. player chose the char he want.&lt;/p&gt;&lt;p&gt;3. Chara is replaced in fight.&lt;/p&gt;&lt;p&gt;4. Turn end&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Exceptions.&lt;/p&gt;&lt;p&gt;- Character dead.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="362" width="180" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-19" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Use item.&lt;/h1&gt;&lt;div&gt;1. Player click on item button&lt;/div&gt;&lt;div&gt;2. Player chose an item.&lt;br&gt;3. Player chose on wich chara use this item.&lt;/div&gt;&lt;div&gt;4. Item effect applied.&lt;/div&gt;&lt;div&gt;5 If item is a consumable, item is deleted&lt;/div&gt;&lt;div&gt;6. Turn end&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Exceptions.&lt;/div&gt;&lt;div&gt;- Effect unaplicable.&lt;/div&gt;&lt;div&gt;- Wrong char chosed.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="362" width="180" height="318" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-23" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Leave.&lt;/h1&gt;&lt;div&gt;1.Player click on quit shop button&lt;/div&gt;&lt;div&gt;2. Shop interface close&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1920" y="40" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-24" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Buy&lt;/h1&gt;&lt;p&gt;1. Player click on Buy button&lt;/p&gt;&lt;p&gt;2. Player choose an item in list.&lt;/p&gt;&lt;p&gt;3. Player define which amount of items.&lt;/p&gt;&lt;p&gt;4.&amp;nbsp; Player press enter to buy&lt;/p&gt;&lt;p&gt;5. Gold is deduct from party.&lt;br&gt;&lt;/p&gt;&lt;p&gt;6. Item(s) is added in inventory&#39;s party&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Exceptions.&lt;/p&gt;&lt;p&gt;- Not enough gold in party.&lt;/p&gt;&lt;p&gt;- Not enough space in inventory&lt;/p&gt;&lt;p&gt;- unique item already buyed&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2120" y="40" width="180" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-25" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Sell&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;1. Player click on sell button&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;&lt;p&gt;2. Player choose an item in inventory.&lt;/p&gt;&lt;p&gt;3. Player define which amount of&amp;nbsp; items.&lt;/p&gt;&lt;p&gt;4.&amp;nbsp; Player press enter to sell&lt;/p&gt;&lt;p&gt;5. Gold is added&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;to the party.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;6. Item(s) is removed from inventory&#39;s party&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Exceptions.&lt;/p&gt;&lt;p&gt;- Not sellable items.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1910" y="235" width="180" height="355" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-34" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Use item.&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. Player chose an item.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. Player chose on wich chara use this item.&lt;/div&gt;&lt;div&gt;4. Item effect applied.&lt;/div&gt;&lt;div&gt;5 If item is a consumable, item is deleted&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Exceptions.&lt;/div&gt;&lt;div&gt;- Effect unaplicable.&lt;/div&gt;&lt;div&gt;- item is not consumable&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2760" y="40" width="180" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-35" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Drop item&lt;/h1&gt;&lt;p&gt;1. Player select an item.&lt;/p&gt;&lt;p&gt;2. Player press del to delete item&lt;/p&gt;&lt;p&gt;3. Player chose quantity to drop.&lt;/p&gt;&lt;p&gt;4. Player confirm the drop&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Exceptions.&lt;/p&gt;&lt;p&gt;- The item is an Quest item.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2960" y="40" width="180" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-36" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Equip stuff&lt;/h1&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. Player chose a character to modifi his stuff&lt;/div&gt;&lt;div&gt;2. Player choose to equi or unequip.&lt;br&gt;3. Player choose the item to Equip/Unequip.&lt;br&gt;4. Item unequiped is move in inventory and item equiped is deleted from inventory and placed in equipment.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Exceptions.&lt;/div&gt;&lt;div&gt;- Stuff is too high level for chara&lt;/div&gt;&lt;div&gt;- Stuff is broken&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2760" y="430" width="180" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-37" value="Equipment" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2520" y="440" width="200" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="2QnAGt9f6g5Ijg59R1Jx-28" value="Equip/Unequip stuff/weapon" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2QnAGt9f6g5Ijg59R1Jx-37">
+          <mxGeometry x="40" y="41" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
