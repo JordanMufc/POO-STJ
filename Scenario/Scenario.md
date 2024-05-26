@@ -21,7 +21,7 @@ Au niveau des ennemis, voici la liste des différents monstres/ennemis possible 
 - Des rats géants
 - Des Trolls
 - Des Gardes
-- Bruniaux le malégique (boss final)
+- Bruniaux le maléfique (boss final)
 
 ### Scénario :
 
