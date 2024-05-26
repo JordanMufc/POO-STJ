@@ -18,10 +18,10 @@ class Game:
         
 
     def import_assets(self):
-        self.tmx_maps = {'world' : load_pygame(join('..','Data','Maps','World.tmx'))}
+        self.tmx_maps = {'world' : load_pygame(join('Data','Maps','World.tmx'))}
 
     def setup(self, tmx_map, player_start_pos):
-         for x,y, surf in tmx_map.get_layer_by_name('Ground').tiles():
+         for x,y, surf in tmx_map.get_layer_by_name('ground').tiles():
             Sprite((x * TILE_SIZE,y * TILE_SIZE), surf, self.all_sprites)
 
 
