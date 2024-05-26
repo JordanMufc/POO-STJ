@@ -1,6 +1,6 @@
 from settings import *
 from pytmx.util_pygame import load_pygame
-from os.path import join, abspath, dirname
+from os.path import join
 
 
 from sprites import Sprite
@@ -19,7 +19,7 @@ class Game:
         
 
     def import_assets(self):
-        self.tmx_maps = {'world': load_pygame(os.path.abspath('Data/Maps/World.tmx'))}
+        self.tmx_maps = {'world': load_pygame(join('..','Data/Maps/World.tmx'))}
 
     def setup(self, tmx_map, player_start_pos):
          for x,y, surf in tmx_map.get_layer_by_name('ground').tiles():
