@@ -1,5 +1,4 @@
 import pygame
-import os
 from pygame.math import Vector2 as vector
 from sys import exit
 
