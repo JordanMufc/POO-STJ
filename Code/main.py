@@ -6,6 +6,7 @@ from os.path import join
 from sprites import Sprite
 from entities import Player
 from groups import AllSprites
+from support import *
 
 
 class Game: 
@@ -25,11 +26,23 @@ class Game:
     def import_assets(self):
         self.tmx_maps = {'world': load_pygame(join('..','Data/Maps/World.tmx'))}
 
-    def setup(self, tmx_map, player_start_pos):
-         for x,y, surf in tmx_map.get_layer_by_name('ground').tiles():
-            Sprite((x * TILE_SIZE,y * TILE_SIZE), surf, self.all_sprites)
+        self.overworld_frames = {
+            'characters' : all_character_import('..', 'Graphics', 'haracters')
+        }
 
-         for obj in tmx_map.get_layer_by_name('entities'):
+    def setup(self, tmx_map, player_start_pos):
+        # terrain
+        for layer in ['ground', 'ground top']:
+            for x,y, surf in tmx_map.get_layer_by_name(layer).tiles():
+                Sprite((x * TILE_SIZE,y * TILE_SIZE), surf, self.all_sprites)
+
+        #objects
+        for obj in tmx_map.get_layer_by_name('Objects'):
+            Sprite((obj.x, obj.y), obj.image, self.all_sprites)
+
+
+        # entities
+        for obj in tmx_map.get_layer_by_name('entities'):
              if obj.name == 'Player' and obj.properties['pos'] == player_start_pos:
                  self.player = Player((obj.x, obj.y), self.all_sprites)
             
