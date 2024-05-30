@@ -30,6 +30,7 @@ class Game:
             'characters' : all_character_import('..', 'Graphics', 'Characters')
         }
 
+
     def setup(self, tmx_map, player_start_pos):
         # terrain
         for layer in ['ground', 'ground top']:
@@ -44,7 +45,10 @@ class Game:
         # entities
         for obj in tmx_map.get_layer_by_name('entities'):
              if obj.name == 'Player' and obj.properties['pos'] == player_start_pos:
-                 self.player = Player((obj.x, obj.y), self.all_sprites)
+                 self.player = Player(
+                     pos = (obj.x, obj.y),
+                     frames = self.overworld_frames['characters']['player'],
+                     groups = self.all_sprites)
             
 
     def run(self):
