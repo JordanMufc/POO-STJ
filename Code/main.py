@@ -27,7 +27,7 @@ class Game:
         self.tmx_maps = {'world': load_pygame(join('..','Data/Maps/World.tmx'))}
 
         self.overworld_frames = {
-            'characters' : all_character_import('..', 'Graphics', 'haracters')
+            'characters' : all_character_import('..', 'Graphics', 'characters')
         }
 
     def setup(self, tmx_map, player_start_pos):
