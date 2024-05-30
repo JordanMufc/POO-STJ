@@ -21,6 +21,7 @@ def import_tilemap(cols, rows, *path):
                  cutout_surf.set_colorkey('green')
                  cutout_surf.blit(surf, (0,0), cutout_rect)
                  frames[(col, row)] = cutout_surf
+    return frames
 
 def import_folder(*path):
     frames = []
@@ -60,5 +61,5 @@ def all_character_import(*path):
     for _, __, image_names in walk(join(*path)):
         for image in image_names:
             image_name = image.split('.')[0]
-            new_dict[image_name] = character_importer(4,4,*path)
+            new_dict[image_name] = character_importer(4,4,*path, image_name)
     return new_dict
