@@ -21,6 +21,7 @@ def import_tilemap(cols, rows, *path):
                  cutout_surf.set_colorkey('green')
                  cutout_surf.blit(surf, (0,0), cutout_rect)
                  frames[(col, row)] = cutout_surf
+    return frames
 
 def import_folder(*path):
     frames = []
