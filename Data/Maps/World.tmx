@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="22">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="29">
  <tileset firstgid="1" source="Dungeon tileset.tsx"/>
  <layer id="1" name="ground" width="100" height="100">
   <data encoding="csv">
@@ -212,8 +212,53 @@
  <objectgroup id="2" name="entities">
   <object id="1" name="Player" x="808.682" y="1562.11">
    <properties>
-    <property name="direction" value="down"/>
+    <property name="direction" value="up"/>
     <property name="pos" value="ground"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Character" x="800" y="856">
+   <properties>
+    <property name="character_id" value="a1"/>
+    <property name="direction" value="down"/>
+    <property name="graphic" value="welcoming"/>
+    <property name="radius" value="400"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Character" x="967.333" y="439.333">
+   <properties>
+    <property name="character_id" value="a2"/>
+    <property name="direction" value="down"/>
+    <property name="graphic" value="tavern keeper"/>
+    <property name="radius" value="400"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Character" x="1344" y="1208.67">
+   <properties>
+    <property name="character_id" value="a3"/>
+    <property name="direction" value="up"/>
+    <property name="graphic" value="seller"/>
+    <property name="radius" value="400"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Character" x="141.333" y="927.333">
+   <properties>
+    <property name="character_id" value="a4"/>
+    <property name="direction" value="right"/>
+    <property name="graphic" value="concierge"/>
+    <property name="radius" value="400"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Character" x="520.667" y="423.333">
+   <properties>
+    <property name="character_id" value="a5"/>
+    <property name="direction" value="down"/>
+    <property name="graphic" value="boss"/>
+    <property name="radius" value="400"/>
    </properties>
    <point/>
   </object>
