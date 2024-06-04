@@ -38,11 +38,11 @@ class Game:
         # terrain
         for layer in ['ground', 'ground top']:
             for x,y, surf in tmx_map.get_layer_by_name(layer).tiles():
-                Sprite((x * TILE_SIZE,y * TILE_SIZE), surf, self.all_sprites)
+                Sprite((x * TILE_SIZE,y * TILE_SIZE), surf, self.all_sprites, WORLD_LAYERS['bg'])
 
         #objects
         for obj in tmx_map.get_layer_by_name('Objects'):
-            Sprite((obj.x, obj.y), obj.image, self.all_sprites)
+            Sprite((obj.x, obj.y), obj.image, (self.all_sprites, self.collision_sprites))
 
         #collision object
         for obj in tmx_map.get_layer_by_name('Collisions'):

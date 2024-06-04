@@ -7,3 +7,8 @@ TILE_SIZE = 16
 ANIMATION_SPEED = 6
 BATTLE_OUTLINE_WIDHT = 4
 
+WORLD_LAYERS =  {
+    'bg' : 1 ,
+    'main' : 3
+}
+
