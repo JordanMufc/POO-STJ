@@ -15,6 +15,7 @@ class Entity(pygame.sprite.Sprite):
         #sprite setup
         self.image = self.frames[self.get_state()][self.frame_index]
         self.rect = self.image.get_frect(center = pos)
+        self.hitbox = self.rect.copy()
 
     def animate(self, dt):
         self.frame_index += ANIMATION_SPEED * dt
@@ -53,6 +54,7 @@ class Player(Entity):
 
     def move(self, dt):
         self.rect.center += self.direction * self.speed * dt
+        self.hitbox.center = self.rect.center
 
     def update(self, dt):
         self.input()

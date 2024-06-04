@@ -1,9 +1,11 @@
+import pygame.sprite
+
 from settings import *
 from pytmx.util_pygame import load_pygame
 from os.path import join
 
 
-from sprites import Sprite
+from sprites import Sprite, BorderSprite
 from entities import Player, Character
 from groups import AllSprites
 from support import *
@@ -18,6 +20,7 @@ class Game:
 
         # Create Group or Groups
         self.all_sprites = AllSprites()
+        self.collision_sprites = pygame.sprite.Group()
 
         self.import_assets()
         self.setup(self.tmx_maps['world'], 'ground')
@@ -41,6 +44,9 @@ class Game:
         for obj in tmx_map.get_layer_by_name('Objects'):
             Sprite((obj.x, obj.y), obj.image, self.all_sprites)
 
+        #collision object
+        for obj in tmx_map.get_layer_by_name('Collisions'):
+            BorderSprite((obj.x, obj.y), pygame.Surface((obj.width, obj.height)),(self.all_sprites, self.collision_sprites))
 
         # entities
         for obj in tmx_map.get_layer_by_name('entities'):
@@ -49,7 +55,7 @@ class Game:
                     self.player = Player(
                         pos = (obj.x, obj.y),
                         frames = self.overworld_frames['characters']['player'],
-                        groups = self.all_sprites,
+                        groups = (self.all_sprites, self.collision_sprites),
                         facing_direction = obj.properties['direction'])
             else: 
                 Character(

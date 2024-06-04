@@ -263,8 +263,8 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="5" name="Collision">
-  <object id="29" name="Collision" x="240.063" y="368.063" width="559.906" height="32.0313"/>
+ <objectgroup id="5" name="Collisions">
+  <object id="29" x="240.063" y="368.063" width="559.906" height="32.0313"/>
   <object id="31" x="544.125" y="624" width="255.918" height="31.9348"/>
   <object id="32" x="240.031" y="624.063" width="255.917" height="31.8438"/>
   <object id="33" x="240.031" y="400" width="15.9063" height="224"/>
