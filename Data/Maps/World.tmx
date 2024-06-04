@@ -210,7 +210,7 @@
 </data>
  </layer>
  <objectgroup id="2" name="entities">
-  <object id="1" name="Player" x="808.015" y="1553.44">
+  <object id="1" name="Player" x="415.015" y="521.44">
    <properties>
     <property name="direction" value="up"/>
     <property name="pos" value="ground"/>
@@ -253,7 +253,7 @@
    </properties>
    <point/>
   </object>
-  <object id="27" name="Character" x="520.667" y="423.333">
+  <object id="27" name="Character" x="515.667" y="503.333">
    <properties>
     <property name="character_id" value="a5"/>
     <property name="direction" value="down"/>
@@ -267,10 +267,10 @@
   <object id="29" x="240.063" y="368.063" width="559.906" height="32.0313"/>
   <object id="31" x="544.125" y="624" width="255.918" height="31.9348"/>
   <object id="32" x="240.031" y="624.063" width="255.917" height="31.8438"/>
-  <object id="33" x="240.031" y="400" width="15.9063" height="224"/>
-  <object id="34" x="784.082" y="400.057" width="15.9233" height="223.98"/>
-  <object id="35" x="480.094" y="656" width="15.8438" height="144.25"/>
-  <object id="36" x="544.031" y="655.938" width="15.9375" height="144.063"/>
+  <object id="33" x="240.031" y="401.667" width="15.9063" height="220.333"/>
+  <object id="34" x="783.416" y="402.39" width="15.9233" height="219.313"/>
+  <object id="35" x="480.094" y="659" width="15.8438" height="141.25"/>
+  <object id="36" x="544.031" y="658.938" width="15.9375" height="141.063"/>
  </objectgroup>
  <objectgroup id="3" name="Objects">
   <object id="9" gid="65" x="251" y="138" width="16" height="16"/>

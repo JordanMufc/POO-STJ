@@ -35,8 +35,9 @@ class Character(Entity):
         super().__init__(pos, frames, groups, facing_direction)
 
 class Player(Entity):
-    def __init__(self, pos, frames, groups, facing_direction):
+    def __init__(self, pos, frames, groups, facing_direction, collision_sprites):
         super().__init__(pos, frames, groups, facing_direction)
+        self.collision_sprites = collision_sprites
 
  
     def input(self):
@@ -55,6 +56,13 @@ class Player(Entity):
     def move(self, dt):
         self.rect.center += self.direction * self.speed * dt
         self.hitbox.center = self.rect.center
+        self.collisions('Horizontal')
+
+    def collisions(self, axis):
+        for sprites in self.collision_sprites:
+            if sprites.hitbox.colliderect(self.hitbox):
+                print('Collisions')
+
 
     def update(self, dt):
         self.input()

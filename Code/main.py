@@ -46,7 +46,7 @@ class Game:
 
         #collision object
         for obj in tmx_map.get_layer_by_name('Collisions'):
-            BorderSprite((obj.x, obj.y), pygame.Surface((obj.width, obj.height)),(self.all_sprites, self.collision_sprites))
+            BorderSprite((obj.x, obj.y), pygame.Surface((obj.width, obj.height)), self.collision_sprites)
 
         # entities
         for obj in tmx_map.get_layer_by_name('entities'):
@@ -56,7 +56,8 @@ class Game:
                         pos = (obj.x, obj.y),
                         frames = self.overworld_frames['characters']['player'],
                         groups = (self.all_sprites, self.collision_sprites),
-                        facing_direction = obj.properties['direction'])
+                        facing_direction = obj.properties['direction'],
+                        collision_sprites = self.collision_sprites)
             else: 
                 Character(
                     pos = (obj.x, obj.y),
