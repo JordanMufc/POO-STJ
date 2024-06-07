@@ -210,14 +210,14 @@
 </data>
  </layer>
  <objectgroup id="2" name="entities">
-  <object id="1" name="Player" x="305.015" y="473.44">
+  <object id="1" name="Player" x="808.277" y="1550.54">
    <properties>
     <property name="direction" value="up"/>
     <property name="pos" value="ground"/>
    </properties>
    <point/>
   </object>
-  <object id="22" name="Character" x="800" y="856">
+  <object id="22" name="NPC" x="800" y="856">
    <properties>
     <property name="character_id" value="a1"/>
     <property name="direction" value="down"/>
@@ -226,7 +226,7 @@
    </properties>
    <point/>
   </object>
-  <object id="23" name="Character" x="967.333" y="439.333">
+  <object id="23" name="NPC" x="967.333" y="439.333">
    <properties>
     <property name="character_id" value="a2"/>
     <property name="direction" value="down"/>
@@ -235,7 +235,7 @@
    </properties>
    <point/>
   </object>
-  <object id="24" name="Character" x="1343.33" y="1196">
+  <object id="24" name="NPC" x="1343.33" y="1196">
    <properties>
     <property name="character_id" value="a3"/>
     <property name="direction" value="up"/>
@@ -244,7 +244,7 @@
    </properties>
    <point/>
   </object>
-  <object id="26" name="Character" x="141.333" y="927.333">
+  <object id="26" name="NPC" x="141.333" y="927.333">
    <properties>
     <property name="character_id" value="a4"/>
     <property name="direction" value="right"/>
@@ -253,7 +253,7 @@
    </properties>
    <point/>
   </object>
-  <object id="27" name="Character" x="515.667" y="503.333">
+  <object id="27" name="NPC" x="515.667" y="503.333">
    <properties>
     <property name="character_id" value="a5"/>
     <property name="direction" value="down"/>

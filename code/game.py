@@ -9,8 +9,8 @@ class Game:
     def __init__(self):
         self.running = True
         self.screen = Screen()
-        self.map = Map(self.screen)
         self.keylistener = KeyListener()
+        self.map = Map(self.screen, self.keylistener)
         self.player = Player(self.keylistener, self.screen, 0, 0)
         self.map.add_player(self.player)
 
