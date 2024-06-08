@@ -1,7 +1,6 @@
 import pygame
 from screen import Screen
 from map import Map
-from entity import Entity
 from keylistener import KeyListener
 from player import Player
 
@@ -11,7 +10,7 @@ class Game:
         self.screen = Screen()
         self.keylistener = KeyListener()
         self.map = Map(self.screen, self.keylistener)
-        self.player = Player(self.keylistener, self.screen, 0, 0)
+        self.player = Player(self.keylistener, self.screen, 800, 1550)
         self.map.add_player(self.player)
 
 

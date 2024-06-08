@@ -16,6 +16,7 @@ class Map:
         self.map_layer = None
         self.group = None
         self.player: Player = None
+        self.player_position_start = None
 
         self.collision: list[pygame.rect] = []
         self.switch_map('world')
@@ -27,11 +28,12 @@ class Map:
         self.map_layer.zoom = 1
         self.group = pyscroll.PyscrollGroup(map_layer=self.map_layer, default_layer=7)
 
+
+
+
         for obj in self.tmx_data.objects:
             if obj.name == 'collision':
                 self.collision.append(pygame.Rect(obj.x, obj.y, obj.width, obj.height))
-
-        for obj in self.tmx_data.objects:
             if obj.name == 'collision':
                 self.collision.append(pygame.Rect(obj.x, obj.y, obj.width, obj.height))
             if obj.name == 'NPC':
@@ -40,6 +42,7 @@ class Map:
                 npc = NPC(self.keylistener, self.screen, obj.x, obj.y, sprite_path)
                 npc.direction = obj.properties.get('direction', 'down')
                 self.add_player(npc)
+
 
         if self.player:
             self.player.add_collisions(self.collision)
