@@ -17,6 +17,7 @@ class Map:
         self.group = None
         self.player: Player = None
 
+        self.collision: list[pygame.rect] = []
         self.switch_map('world')
 
     def add_player(self, player):
@@ -32,6 +33,8 @@ class Map:
         self.group = pyscroll.PyscrollGroup(map_layer=self.map_layer, default_layer=7)
 
         for obj in self.tmx_data.objects:
+            if obj.name == 'collision':
+                self.collision.append(pygame.Rect(obj.x, obj.y, obj.width, obj.height))
             if obj.name == 'NPC':
                 sprite_name = obj.properties.get('graphic', 'default')
                 sprite_path = f'../assets/sprites/Characters/{sprite_name}.png'  # Chemin d'accès au sprite
