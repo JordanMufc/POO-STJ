@@ -93,6 +93,9 @@ class Entity(pygame.sprite.Sprite):
             self.hitbox.midbottom = self.rect.midbottom
         self.position = pygame.math.Vector2(self.rect.center)
 
+    def add_collisions(self, collisions):
+        self.collisions = collisions
+
     def get_all_images(self):
         all_images = {
             "down": [],
