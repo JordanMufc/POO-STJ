@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="38">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="94">
  <tileset firstgid="1" source="Dungeon tileset.tsx"/>
  <layer id="1" name="ground" width="100" height="100">
   <data encoding="csv">
@@ -209,70 +209,111 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,4,4,4,4,4,4,4,4,193,194,195,4,4,4,4,4,4,4,4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="2" name="entities">
-  <object id="1" name="Player" x="808.277" y="1550.54">
-   <properties>
-    <property name="direction" value="up"/>
-    <property name="pos" value="ground"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="22" name="NPC" x="800" y="856">
-   <properties>
-    <property name="character_id" value="a1"/>
-    <property name="direction" value="down"/>
-    <property name="graphic" value="welcoming"/>
-    <property name="radius" value="400"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="23" name="NPC" x="967.333" y="439.333">
-   <properties>
-    <property name="character_id" value="a2"/>
-    <property name="direction" value="down"/>
-    <property name="graphic" value="tavern keeper"/>
-    <property name="radius" value="400"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="24" name="NPC" x="1343.33" y="1196">
-   <properties>
-    <property name="character_id" value="a3"/>
-    <property name="direction" value="up"/>
-    <property name="graphic" value="seller"/>
-    <property name="radius" value="400"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="26" name="NPC" x="141.333" y="927.333">
-   <properties>
-    <property name="character_id" value="a4"/>
-    <property name="direction" value="right"/>
-    <property name="graphic" value="concierge"/>
-    <property name="radius" value="400"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="27" name="NPC" x="515.667" y="503.333">
-   <properties>
-    <property name="character_id" value="a5"/>
-    <property name="direction" value="down"/>
-    <property name="graphic" value="boss"/>
-    <property name="radius" value="400"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="3" name="Objects">
-  <object id="9" gid="65" x="251" y="138" width="16" height="16"/>
-  <object id="14" gid="86" x="271.5" y="131" width="16" height="16"/>
-  <object id="15" gid="86" x="243" y="118" width="16" height="16"/>
-  <object id="16" gid="86" x="241" y="121" width="16" height="16"/>
-  <object id="17" gid="86" x="240" y="120" width="16" height="16"/>
-  <object id="18" gid="86" x="239" y="115.5" width="16" height="16"/>
-  <object id="19" gid="86" x="239" y="115.5" width="16" height="16"/>
-  <object id="20" gid="86" x="239" y="122" width="16" height="16"/>
-  <object id="21" gid="86" x="238.5" y="125.5" width="16" height="16"/>
- </objectgroup>
- <objectgroup id="7" name="Collisions"/>
+ <group id="8" name="Object">
+  <objectgroup id="2" name="entities">
+   <object id="1" name="Player" x="808.277" y="1550.54">
+    <properties>
+     <property name="direction" value="up"/>
+     <property name="pos" value="ground"/>
+    </properties>
+    <point/>
+   </object>
+   <object id="22" name="NPC" x="800" y="856">
+    <properties>
+     <property name="character_id" value="a1"/>
+     <property name="direction" value="down"/>
+     <property name="graphic" value="welcoming"/>
+     <property name="radius" value="400"/>
+    </properties>
+    <point/>
+   </object>
+   <object id="23" name="NPC" x="967.333" y="439.333">
+    <properties>
+     <property name="character_id" value="a2"/>
+     <property name="direction" value="down"/>
+     <property name="graphic" value="tavern keeper"/>
+     <property name="radius" value="400"/>
+    </properties>
+    <point/>
+   </object>
+   <object id="24" name="NPC" x="1343.33" y="1196">
+    <properties>
+     <property name="character_id" value="a3"/>
+     <property name="direction" value="up"/>
+     <property name="graphic" value="seller"/>
+     <property name="radius" value="400"/>
+    </properties>
+    <point/>
+   </object>
+   <object id="26" name="NPC" x="141.333" y="927.333">
+    <properties>
+     <property name="character_id" value="a4"/>
+     <property name="direction" value="right"/>
+     <property name="graphic" value="concierge"/>
+     <property name="radius" value="400"/>
+    </properties>
+    <point/>
+   </object>
+   <object id="27" name="NPC" x="515.667" y="503.333">
+    <properties>
+     <property name="character_id" value="a5"/>
+     <property name="direction" value="down"/>
+     <property name="graphic" value="boss"/>
+     <property name="radius" value="400"/>
+    </properties>
+    <point/>
+   </object>
+  </objectgroup>
+  <objectgroup id="7" name="collisions">
+   <object id="41" name="collision" x="240" y="368" width="16" height="256"/>
+   <object id="42" name="collision" x="240" y="624" width="256" height="32"/>
+   <object id="43" name="collision" x="480" y="656" width="16" height="144"/>
+   <object id="44" name="collision" x="400" y="800" width="96" height="32"/>
+   <object id="45" name="collision" x="400" y="832" width="16" height="80"/>
+   <object id="46" name="collision" x="304" y="880" width="96" height="32"/>
+   <object id="47" name="collision" x="304" y="800" width="16" height="80"/>
+   <object id="48" name="collision" x="112" y="800" width="192" height="32"/>
+   <object id="49" name="collision" x="112" y="832" width="16" height="224"/>
+   <object id="50" name="collision" x="128" y="1024" width="192" height="32"/>
+   <object id="51" name="collision" x="304" y="944" width="16" height="80"/>
+   <object id="52" name="collision" x="320" y="944" width="96" height="32"/>
+   <object id="53" name="collision" x="400" y="976" width="16" height="48"/>
+   <object id="54" name="collision" x="416" y="992" width="224" height="32"/>
+   <object id="55" name="collision" x="624" y="1024" width="16" height="576"/>
+   <object id="56" name="collision" x="640" y="1584" width="352" height="16"/>
+   <object id="58" name="collision" x="976" y="992" width="16" height="592"/>
+   <object id="59" name="collision" x="992" y="992" width="224" height="32"/>
+   <object id="60" name="collision" x="1200" y="976" width="128" height="16"/>
+   <object id="61" name="collision" x="1312" y="992" width="16" height="96"/>
+   <object id="62" name="collision" x="1216" y="1056" width="96" height="32"/>
+   <object id="63" name="collision" x="1216" y="1088" width="16" height="160"/>
+   <object id="64" name="collision" x="1232" y="1216" width="240" height="32"/>
+   <object id="65" name="collision" x="1456" y="1056" width="16" height="160"/>
+   <object id="66" name="collision" x="1360" y="1056" width="96" height="32"/>
+   <object id="67" name="collision" x="1360" y="912" width="16" height="144"/>
+   <object id="68" name="collision" x="1200" y="880" width="160" height="64"/>
+   <object id="69" name="collision" x="1360" y="880" width="80" height="32"/>
+   <object id="70" name="collision" x="1424" y="656" width="16" height="224"/>
+   <object id="71" name="collision" x="1440" y="656" width="144" height="32"/>
+   <object id="72" name="collision" x="1568" y="432" width="16" height="224"/>
+   <object id="73" name="collision" x="1232" y="432" width="336" height="32"/>
+   <object id="74" name="collision" x="1232" y="464" width="16" height="224"/>
+   <object id="75" name="collision" x="1248" y="656" width="128" height="32"/>
+   <object id="76" name="collision" x="1360" y="688" width="16" height="160"/>
+   <object id="77" name="collision" x="1200" y="816" width="160" height="32"/>
+   <object id="78" name="collision" x="1056" y="800" width="144" height="32"/>
+   <object id="79" name="collision" x="1056" y="688" width="16" height="112"/>
+   <object id="80" name="collision" x="1072" y="688" width="128" height="32"/>
+   <object id="82" name="collision" x="1184" y="384" width="16" height="304"/>
+   <object id="83" name="collision" x="864" y="384" width="320" height="32"/>
+   <object id="85" name="collision" x="880" y="688" width="128" height="32"/>
+   <object id="86" name="collision" x="992" y="720" width="16" height="112"/>
+   <object id="87" name="collision" x="544" y="800" width="448" height="32"/>
+   <object id="88" name="collision" x="544" y="624" width="16" height="176"/>
+   <object id="89" name="collision" x="560" y="624" width="240" height="32"/>
+   <object id="90" name="collision" x="784" y="368" width="16" height="256"/>
+   <object id="91" name="collision" x="256" y="368" width="528" height="32"/>
+   <object id="92" name="collision" x="864" y="416" width="16" height="304"/>
+  </objectgroup>
+ </group>
 </map>
