@@ -13,15 +13,15 @@ class NPC(Entity):
         self.spritesheet = pygame.image.load(sprite_path)
         self.image = Tool.split_image(self.spritesheet, 0, 0, CHARACTER_SPRITE_WIDTH, CHARACTER_SPRITE_HEIGHT)
         self.all_images = self.get_all_images()
-        self.index_image = 0
-        self.image_part = 0
-        self.reset_animation = False
-        self.step = 0
-        self.animation_walk = False
-        self.direction = 'down'  
-        self.walk_speed = 1
-        self.animation_step_time = 0.0
-        self.action_animation = 1
+        #self.index_image = 0
+        #self.image_part = 0
+        #self.reset_animation = False
+        #self.step = 0
+        #self.animation_walk = False
+        #self.direction = 'down'
+        #self.walk_speed = 1
+        #self.animation_step_time = 0.0
+        #self.action_animation = 1
 
     def update(self):
         self.rect.center = self.position
@@ -39,18 +39,3 @@ class NPC(Entity):
         # Mettre à jour toutes les images avec le nouveau sprite chargé
         self.all_images = self.get_all_images()    
 
-    def get_all_images(self):
-        all_images = {
-            "down": [],
-            "left": [],
-            "right": [],
-            "up": []
-        }
-
-        width = self.spritesheet.get_width() // 4
-        height = self.spritesheet.get_height() // 4
-
-        for i in range(4):
-            for j, key in enumerate(all_images.keys()):
-                all_images[key].append(Tool.split_image(self.spritesheet, i * width, j * height, width, height))
-        return all_images
